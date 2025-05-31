@@ -67,5 +67,15 @@ public List<Pelicula> obtenerPeliculas() {
         }
     }
 
+    public Pelicula searchByName (String nombre) {
+        for (Pelicula pelicula : peliculasList) {
+            if (pelicula.getNombre().equals(nombre)) {
+                return pelicula;
+            }
+        }
+        return null;
+    }
+
+
 
 }
