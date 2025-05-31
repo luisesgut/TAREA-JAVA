@@ -60,7 +60,7 @@ public List<Pelicula> obtenerPeliculas() {
     //marcar pelicula disponible por id
    public void  marcarPeliculaComoDisponible (int id) {
         for (Pelicula pelicula : peliculasList) {
-            if (pelicula.getId() == id && !pelicula.isDisponible()) {
+            if (pelicula.getId() == id && pelicula.isDisponible()) {
                 pelicula.setDisponible(true);
                 break;
             }
